@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="images/santashuffle.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>SantaShuffle</title>
+  </head>
+  <body>
+    <header>
+      <a id="titlelink" href="index.html">
+        <h1 id="title">SantaShuffle</h1>
+      </a>
+    </header>
+
+    <nav>
+      <a id="about" href="about.html">About Us</a>
+      <a id="contact" href="contact.html">Contact Us</a>
+      <hr />
+    </nav>
+
+    <main>
+      <p id="intro">
+        Welcome to
+        <span style="color: rgb(255, 94, 94)">SantaShuffle</span>! A completely
+        free, open-source, and easy to use Secret Santa role assigner. No need
+        to create an account or share any personal information – just enter the
+        names and let the magic happen.
+      </p>
+      <div id="hostInfo">
+        <label for="name">Host Name</label>
+        <input type="text" id="name" />
+        <br />
+        <label for="email">Host Email</label>
+        <input type="email" id="email" />
+        <br />
+        <label for="quantity">Number of people (not including host)</label>
+        <input type="number" id="quantity" min="3" max="20" />
+        <br />
+      </div>
+    </main>
+    <button id="hostButton">Host Group</button>
+    <script src="homeScript.js" type="module"></script>
+  </body>
+</html>
